@@ -1,0 +1,18 @@
+<app-nav-bar></app-nav-bar>
+<router-outlet></router-outlet>
+<div *ngIf="show" [ngClass]="{'showContactForm': showContactForm}" class="contactform">
+    <div class="form">
+        <p>Please fill out the form below and we will get back to you as soon as possible.</p>
+        <form action="">
+            <input type="text" placeholder="Name">
+            <input type="email" name="" id="" placeholder="email">
+            <textarea placeholder="Message" name="" id="" cols="30" rows="3"></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div (click)="toggleContactForm()" [ngClass]="{'iconB': showContactForm}" class="icon">
+        <i class="fas fa-comment"></i>
+        <i class="fas fa-times"></i>
+    </div>
+</div>
+<app-footer></app-footer>

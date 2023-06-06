@@ -1,0 +1,25 @@
+<main>
+    <!-- <h1>Exited Portfolio</h1>
+    <div class="portfolio">
+        <div *ngFor="let item of portfolio.exitedPortfolio" class="card">
+            <h2 data-aos-delay="100" data-aos-duration="1500" data-aos="zoom-in" >{{item.sector}}</h2>
+            <img data-aos-delay="100" data-aos-duration="1500" data-aos="zoom-in" [src]="item.img" alt="">
+            <div class="about">
+                <p data-aos-delay="100" data-aos-duration="1500" data-aos="zoom-in" *ngFor="let items of item.about" >{{items}}</p>
+            </div>
+        </div>
+    </div> -->
+    <h1>Current Portfolio</h1>
+    <div class="portfolio">
+        <div *ngFor="let item of portfolio.currentPortfolio" class="portfolio-card">
+            <h2 data-aos-delay="100" data-aos-duration="1500" data-aos="zoom-in" >{{item.sector}}</h2>
+            <img data-aos-delay="100" data-aos-duration="1500" data-aos="zoom-in" [src]="item.img" alt="">
+            <div class="about">
+                <p data-aos-delay="100" data-aos-duration="1500" data-aos="zoom-in" *ngFor="let items of item.about" >{{items}}</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+</main>

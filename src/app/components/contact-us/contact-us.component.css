@@ -1,0 +1,121 @@
+main{
+    width:100%;
+    padding:50px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.heading{
+    width: 100%;
+    margin-bottom: 3%;
+}
+main img{
+    width: 50%;
+    border-radius: 10px;
+}
+.form{
+    width: 40%;
+}
+.form p{
+    width: 100%;
+    padding: 1% 3%;
+    background-color: #003487;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 30px;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+mat-form-field{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    padding: 1%;
+}
+button{
+    width: fit-content;
+    margin-top: 1rem;
+    padding:8px 19px;
+    border-radius: 10px;
+    transition: .4s;
+    background-color: aliceblue;
+    color: #003487;
+    border: 2px solid #003487;
+}
+button:hover{
+    border:2px solid aliceblue;
+    background-color: #003487;
+    color: aliceblue;
+    cursor: pointer;
+}
+@media (max-width:900px){
+    main img{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+        margin-top: 3%;
+    }
+    .adr-para{
+        padding: 0px 0px !important;
+    }
+    .all-adr{
+        width: 286px !important;
+        margin-left: 44px !important;
+    }
+    i{
+        font-size: 24px !important;
+        margin-right: 0px !important;
+    }
+    .detail{
+        margin-left: 40px !important;
+    }
+
+}
+
+.left-div .heading-left{
+    color: orange;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 30px;
+    background-color: none;
+}
+.address-div{
+    margin: 25px 0px;
+}
+.all-adr{
+    width: 420px;
+    margin-left: 47px;
+}
+.adr-para{
+    padding: 0 45px;
+}
+
+i{
+    color:orange; 
+    font-size: 28px;
+    margin-right: 5px;
+}
+.icon-para{
+    font-size: 17px;
+    color: gray;
+    margin-left: 5px;
+    margin-bottom: 6px;
+}
+.contact-detail{
+    display: flex;
+    justify-content: space-between;
+}
+.detail{
+    margin-left: 50px;
+
+}

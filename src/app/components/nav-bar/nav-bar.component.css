@@ -1,0 +1,141 @@
+main{
+    display: flex;
+    padding:.8% 5%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    transition: .4s;    
+    background-color: rgba(255, 255, 255, 0);
+    overflow:unset;
+}
+.active{
+    color: #0062FF;
+}
+.logo{
+    width: 10%;
+    cursor: pointer;
+    border-radius: 10px;
+    /* background-color: white; */
+    padding: 0 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%;
+}
+.menu{
+    display: none;
+}
+.fa-bars{
+    font-size: 25px;
+}
+.links{
+    position: relative;
+}
+div.links, div.link-holder{
+    margin-left:20px ;
+}
+.dark .links{
+    color: rgb(255, 255, 255);
+}
+.dark .fa-bars{
+    color: white;
+}
+.links::before{
+    position: absolute;
+    width: 0%;
+    height:1.5px ;
+    border-radius:0 10px 10px 0  ;
+    background-color: #0062FF;
+    content: '';
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+}
+.links:hover{
+    color: #0062FF;
+    cursor: pointer;
+}   
+.links:hover::before{
+    width: 80%;
+}
+.link-holder{
+    position: relative;
+}
+.dark .link-holder{
+    color: white;
+}
+.dropdown{
+    position: absolute;
+    top:100%;
+    background-color: #ffffffcd;
+    width:max-content;
+    backdrop-filter: blur(2px);
+    padding:10px;
+    border-radius: 5px;
+    transition: .4s;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    transform: translateY(-100px);
+}
+.dark .dropdown{
+    background-color: #000000cd;
+}
+.link-holder:hover  .dropdown{
+    opacity: 1;
+    width:max-content;
+    height:auto;
+    transform: translateY(0px);
+}
+.dropdown p{
+    color: rgb(51, 51, 51);
+}
+.dropdown p:hover{
+    cursor: pointer;
+    color: #0062FF;
+}
+
+@media (max-width:900px) {
+    nav{
+       min-width:unset;
+    }
+    .links , .link-holder{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+        margin: 5px 0;
+    }
+    .menu{
+        display: unset;
+    }
+    .menu-options{
+        position: absolute;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        padding:15% 5% 5% 5%;
+        color: grey;
+        transform: translateX(100%);
+        transition: .4s;
+    }
+    .show{
+        transform: translateX(0);
+    }
+    .fa-times{
+        position:absolute;
+        right: 7%;
+        top: 5%;
+        font-size: 30px;
+    }
+}
+
+
+

@@ -1,0 +1,16 @@
+main{
+    width: 100%;
+ }
+ img{
+     width:30%;
+ }
+ p{
+     color: #757575;
+     margin-top: 10px;
+     font-size: 1rem;
+     word-spacing: 4px;
+     line-height: 25px;
+  }
+  h4{
+      color: #ff6600;
+  }

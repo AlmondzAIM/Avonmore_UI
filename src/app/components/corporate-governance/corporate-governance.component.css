@@ -1,0 +1,27 @@
+main{
+    width: 100%;
+    padding:100px 5%;
+}
+
+.table{
+    width: 100%;
+    overflow-x: auto;
+    text-align: center;
+}
+table{
+    width:100%;
+}
+th.mat-header-cell{
+    text-align: center;
+}
+th{
+    background-color: #ff6600;
+    color: aliceblue;
+}
+td ,th {
+    font-size: .8rem;
+    border:  1px solid rgb(162, 162, 162);
+}
+th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type{
+    padding: 0 10px;
+}

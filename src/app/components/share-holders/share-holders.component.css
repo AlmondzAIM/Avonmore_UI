@@ -1,0 +1,45 @@
+main{
+    width: 100%;
+    padding:50px 5%;
+}
+h1{
+  font-weight: 500;  
+  position: relative;
+  font-size: 1.4rem;
+  margin-bottom:5%;
+  text-align: center;
+  margin: 5% 0;
+}
+h1::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -2px;
+    left:45%;
+    width:10%;
+    background-color: #0e274f;
+}
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+
+  .para_content p{
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 10px 0 0;
+    margin-bottom: 15px;
+    color: #000 !important;
+    text-align: justify;
+  }
+
+  .subTitle{
+    font-size: 20px;
+    line-height: 24px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 25px;
+  }
+
+.custom-header{
+  pointer-events: none;
+}

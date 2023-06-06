@@ -1,0 +1,56 @@
+main{
+    width: 100%;
+    padding: 50px 5%;
+}
+
+.bod{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.bodCard{
+    width: 40%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    box-shadow: 2px 2px 6px rgb(227, 227, 227);
+    margin: 1% 0;
+    border-radius: 5px;
+    padding: 1% ;
+}
+.about{
+    margin-left: 20px;
+}
+.about p:nth-child(1){
+    font-size: 1.5rem;
+}
+.img{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e3e3;
+    padding: 1% 0;
+}
+img{
+    width: 80%;
+    aspect-ratio: 1/0.7;
+    border-radius: 50%;
+}
+
+@media (max-width:900px) {
+
+    .bodCard{
+        width: 100%;
+    }
+    .about p:nth-child(1){
+        font-size: 1rem;
+    }
+    .about p:nth-child(2){
+        font-size: 0.8rem;
+    }
+    .bodCard i{
+        font-size: 3rem;
+    }
+}

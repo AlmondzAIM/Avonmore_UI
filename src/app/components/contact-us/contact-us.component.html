@@ -1,0 +1,80 @@
+<main>
+    <h2 class="heading">Contact us</h2>
+    <!-- <img data-aos-delay="100" data-aos-duration="1500" data-aos="fade-right" src="assets/images/contact.jpg" alt=""> -->
+    <div class="left-div">
+        <div class="address-div">
+            <p class="heading-left">Registered Office – Mumbai</p>
+            <div class="adr-para">
+                <p class="icon-para"><i class="fa fa-map-marker fa-2x"
+                        aria-hidden="true"></i>&nbsp;&nbsp; ADDRESS</p>
+                <p class="all-adr">Level 5, Grande Palladium, 175, CST Road, Off BKC, Kalina, Santacruz (East) Mumbai
+                    400098, Maharashtra,
+                    India</p>
+                    <div class="contact-detail">
+                        <div>
+                            <p class="icon-para"><i class="fa fa-phone fa-2x"
+                                    aria-hidden="true"></i>&nbsp;&nbsp; TELEPHONE</p>
+                            <p class="detail">011-43500700</p>
+                        </div>
+                        <div>
+                            <p class="icon-para"><i class="fa fa-fax fa-2x"
+                                    aria-hidden="true"></i>&nbsp;&nbsp; FAX</p>
+                            <p class="detail">+91 22 66437700</p>
+                            <p style="line-height: 10px;" class="detail">+91 22 67526603</p>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <p class="icon-para"><i class="fa fa-envelope fa-2x"
+                                aria-hidden="true"></i>&nbsp;&nbsp; EMAIL</p>
+                        <p class="detail">info@almondz.com</p>
+                    </div>
+            </div>
+        </div>
+        <div class="address-div">
+            <p class="heading-left">Corporate Office - Delhi</p>
+            <div class="adr-para">
+                <p class="icon-para"><i class="fa fa-map-marker fa-2x"
+                        aria-hidden="true"></i>&nbsp;&nbsp; ADDRESS</p>
+                <p class="all-adr">F-33/3 Okhla Industrial Area Phase-II,
+                    New Delhi-110020, India</p>
+                <div class="contact-detail">
+                    <div>
+                        <p class="icon-para"><i class="fa fa-phone fa-2x"
+                                aria-hidden="true"></i>&nbsp;&nbsp; TELEPHONE</p>
+                        <p class="detail">011-43500700</p>
+                    </div>
+                    <div>
+                        <p class="icon-para"><i class="fa fa-envelope fa-2x"
+                                aria-hidden="true"></i>&nbsp;&nbsp; EMAIL</p>
+                        <p class="detail">info@almondz.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-aos-delay="100" data-aos-duration="1500" data-aos="fade-left" class="form">
+        <p>Please fill out the form below and we will get back to you as soon as possible.</p>
+        <form [formGroup]="formgroup" (ngSubmit)="submit()" action="">
+            <mat-form-field appearance="outline">
+                <mat-label>Enter Your Name</mat-label>
+                <input matInput formControlName="from_name" type="text" placeholder="">
+                <mat-error>please enter your name</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Enter Your Email</mat-label>
+                <input matInput formControlName="user_email" type="email" name="" id=""
+                    placeholder="Ex. pat@example.com">
+                <mat-error>please enter valid email</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Enter Your Phone</mat-label>
+                <input matInput formControlName="user_phone" type="number" placeholder="Ex. 9456325867">
+                <mat-error>please enter valid mobile number</mat-error>
+            </mat-form-field>
+            <textarea formControlName="message" placeholder="Message" name="" id="" cols="30" rows="6"></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+</main>

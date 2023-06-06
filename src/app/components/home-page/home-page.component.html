@@ -1,0 +1,114 @@
+<ngb-carousel data-aos="fade-up">
+    <ng-template class="slide" *ngFor="let item of slides" ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img class="slideImg" [src]="item.img" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+            <h3>{{item.name}}</h3>
+            <p>{{item.about}}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
+<main>
+    <h1 class="mainHeading" data-aos="fade-up" >Empowering Businesses</h1>
+    <h2 class="heading" data-aos-delay="100" data-aos-duration="1500" data-aos="zoom-in">Welcome to Avonmore Capital</h2>
+    <div class="welcome">
+        <img data-aos-delay="100" data-aos-duration="1500" data-aos="fade-right" src="assets/images/welcome.jpg" alt="">
+        <div data-aos-delay="100" data-aos-duration="1500" data-aos="fade-left">
+            <p>‘Make in India’ campaign, launched in 2014, aimed to encourage global firms to tilt to India—to open up avenues for influx of foreign capital in India. The follow-up ‘Aatmanirbhar Bharat’ campaign took this idea forward and focused on making India economically, technologically and infrastructurally self-reliant. It aimed to transform India from a passive market to an active manufacturing hub at the core of global value chains.</p>
+            <p>At Avonmore Capital Management Services Limited (ACMS), we plan to identify and invest in businesses that
+                can grow over long time horizons and produce long-term value.This help to enhance Shareholders’ and Employees’ Wealth while keeping Nations’ Interest on priority.</p>
+            <p>ACMS, incorporated in 1992 and set up by a team that was young, aggressive and hungry for opportunities to make profitable deals. Our aim has remained consistent since 1992 - "Use our entrepreneurial drive to build and connect strong, sustainable businesses through ethical practices, innovation and synergetic partnerships".</p>
+            <p>We specialize in identifying scalable business models, create an execution-ready plan, invest our resources, monitor and implement the strategy and finally exit the business at a formidable value at an appropriate time. Religiously following this principle, we have created successful businesses in both Service and Manufacturing Sectors.</p>
+        </div>
+    </div>
+
+
+    <div class="strategies">
+        <h2 class="heading" data-aos-delay="100" data-aos-duration="1500" data-aos="zoom-in">Selection Criteria</h2>
+        <p style="margin-bottom:2% ;"  >The objective is to build businesses with potential to grow, create value, re-rate before we take full or part exit. Following broad principle of investment are followed:</p>
+            <img src="assets/images/startegies/Blue White Geometric Business Blog Banner (2)-min-compressed.jpg" alt="">
+            <!-- <div class="strategies-tiles">
+                <div class="depth-A" >
+                    <div class="depth-AA" >
+                        <div class="depth-AAA">
+                            <img src="assets/images/startegies/HighROI.jpg" alt="">
+                            <div style="background-color: rgba(255, 136, 85, 0.544);" class="hueDiv"></div>
+                            <p>High RoI Business</p>
+                        </div>
+                        <div class="depth-AAB">
+                            <img src="assets/images/startegies/suitableBusiness.jpg" alt="">
+                            <div style="background-color: #0e274fa0;" class="hueDiv"></div>
+                            <p>Sustainable business</p>
+                        </div>
+                    </div>
+                    <div class="depth-AB">
+                        <img src="assets/images/startegies/Highgrowth.jpg" alt="">
+                        <div style="background-color: rgba(255, 136, 85, 0.544);" class="hueDiv"></div>
+                        <p>High Growth in business</p>
+                    </div>
+                </div>
+                <div class="depth-B" >
+                    <div class="depth-BA">
+                        <img src="assets/images/startegies/ethicalbusiness.jpg" alt="">
+                        <div style="background-color: #0e274fa0;" class="hueDiv"></div>
+                        <p>Ethical business</p>
+                    </div>
+                    <div class="depth-BB">
+                        <div class="depth-BBA">
+                            <img src="assets/images/startegies/competition.jpg" alt="">
+                            <div style="background-color: #0e274fa0;" class="hueDiv"></div>
+                            <p>Competitiveness in the Industry Segment</p>
+                        </div>
+                        <div class="depth-BBB">
+                            <img src="assets/images/startegies/technicalViability.jpg" alt="">
+                            <div style="background-color: rgba(255, 136, 85, 0.544);" class="hueDiv"></div>
+                            <p>Technically & financially viable business</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <p style="margin-top:2% ;" >Avonmore’s in-house team critically evaluate on these parameters and take final call on the selection of investment/businesses.</p>
+    </div>
+    <h2 data-aos="zoom-in" class="heading" >Investment Strategy</h2>
+    <div class="strategies-cards">
+        <div data-aos-delay="100" data-aos-duration="1000" data-aos="zoom-in"
+            *ngFor="let items of startegies; let i = index" class="strategies-card">
+            <img [src]="items.img" alt="">
+            <p>{{items.name}}</p>
+            <p>{{items.about[0].substring(0,250)}}... <span (click)="openDilog(i)"> Read More</span></p>
+        </div>
+    </div>
+    <h2 class="heading" >Exited Portfolio</h2>
+    <div class="exited_portfolio">
+        <img [src]="exitedPortfolio[0].img" alt="" />
+        <div class="about">
+            <p *ngFor="let item of exitedPortfolio[0].about" >{{item}}</p>
+            <span [routerLink]="['exited-portfolio']" >read more</span>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <h2 data-aos="zoom-in" class="heading" >Current Portfolio</h2>
+        <div class="portfolio-cards">
+            <div data-aos-delay="100" data-aos-duration="1500" data-aos="fade-up" *ngFor="let item of portfolio"
+                class="portfolio-card">
+                <img [src]="item.img" alt="">
+                <p>{{item.sector}}</p>
+                <p>{{item.about[0].substring(0,250)}}... <span [routerLink]="['/current-portfolio']"> Read More</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="newsLatter">
+        <h3>Get in Touch!</h3>
+        <p>Subscribe to receive our newsletter</p>
+        <form action="">
+            <input type="text">
+            <button>Subscribe <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div> -->
+
+</main>

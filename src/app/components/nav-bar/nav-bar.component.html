@@ -1,0 +1,40 @@
+<main *ngIf="showHeader" id="main">
+    <img [routerLink]="['']" src="assets/images/logo.jpg" alt="Avonmore" class="logo">
+
+    <nav [ngClass]="{'dark':router.url=='//' }" >
+        <div class="links"  [routerLink]="['']" >Home</div>
+        <div class="link-holder">About us 
+            <div class="dropdown">
+                <p class="links"  [routerLink]="['board-of-directors']" >Board of Directors</p>
+                <p class="links"  [routerLink]="['corporate-governance']" >Corporate Governance</p>
+            </div>
+        </div>
+        <div class="link-holder">Portfolio
+            <div class="dropdown">
+                <p class="links"  [routerLink]="['exited-portfolio']" >Exited Portfolio</p>
+                <p class="links"  [routerLink]="['current-portfolio']" >Current Portfolio</p>
+            </div>
+        </div>
+        <div [routerLink]="['share-holders']" class="links">Shareholders</div>
+        <div [routerLink]="['financials']"    class="links">Financials</div>
+        <div [routerLink]="['contact-us']"    class="links">Contact us</div>
+        <div class="menu">
+            <i (click)="showMenu()" class="fas fa-bars"></i>
+            <div (click)="showMenu()" [ngClass]="{'show':menu}" class="menu-options">
+                <i  class="fas fa-times" ></i>
+                <p  [routerLink]="['']" >Home</p>
+                <!-- <p  [routerLink]="['about-us']" >Vision</p> -->
+                <p  [routerLink]="['corporate-governance']" >Corporate Governance</p>
+                <p  [routerLink]="['board-of-directors']" >Board of Directors</p>
+                <p  [routerLink]="['exited-portfolio']" >Exited Portfolio</p>
+                <p  [routerLink]="['current-portfolio']" >Current Portfolio</p>
+                <p [routerLink]="['share-holders']" >Shareholders</p>
+                <p [routerLink]="['financials']"    >Financials</p>
+                <p [routerLink]="['contact-us']"    >Contact us</p>
+
+            </div>
+        </div>
+    </nav>
+</main>  
+
+

@@ -1,0 +1,107 @@
+.contactform{
+    position: fixed;
+    bottom:3%;
+    padding: 1%;
+    right: 1%;
+    z-index: 1;
+}
+
+.icon i{
+    font-size: 2rem;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #003487;
+    aspect-ratio: 1/1;
+    transition: .4s;
+    width:3rem;
+    overflow: hidden;
+    background-color: rgb(255, 128, 0);
+}
+.icon .fa-times{
+    width: 0;
+}
+.iconB .fa-comment{
+    width: 0;
+}
+.iconB .fa-times {
+    width: 3rem;
+}
+.contactform .form{
+    position: absolute;
+    height:0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.534);
+    background-color: rgba(97, 179, 255, 0.219);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    bottom:4.3rem;
+    right:3rem;
+    width: 0;
+    transition: .4s;
+}
+.showContactForm .form{
+    height:27rem;
+    width: unset;
+    padding: 1rem;
+    aspect-ratio: 3/4;
+}
+.contactform p{
+    text-align: center;
+    color: aliceblue;
+    background-color: #003487;
+    padding: 3% 2%;
+    border-radius: 10px;
+}
+.contactform form{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form input{
+    width: 100%;
+    height: 2.4rem;
+    margin:.5rem 0;
+    border:3px solid white;
+    padding: 0 1rem;
+    border-radius: 10px;
+    transition: .4s;
+}
+.contactform textarea{
+    transition: .4s;
+    width: 100%;
+    margin:.5rem 0;
+    border: 3px solid white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.contactform textarea:focus{
+    outline: none;        
+    border: 3px solid #003487;
+}
+ .contactform form input:focus{
+    outline: none;    
+    border: 3px solid #003487;
+}
+.contactform button{
+    width: fit-content;
+    margin-top: 1rem;
+    padding:8px 19px;
+    border-radius: 10px;
+    transition: .4s;
+    background-color: aliceblue;
+    color: #003487;
+    border: 2px solid #003487;
+}
+.contactform button:hover{
+    border:2px solid aliceblue;
+    background-color: #003487;
+    color: aliceblue;
+    cursor: pointer;
+}

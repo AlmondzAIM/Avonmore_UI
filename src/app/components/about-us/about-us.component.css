@@ -1,0 +1,35 @@
+main{
+    width: 100%;
+    padding:50px 5%;
+}
+
+
+.vision{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.vision img{
+    width: 100%;
+
+}
+.vision p{
+    width: 50%;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 30%;
+    color: #ff6600;
+    font-size: 3rem;
+}
+
+@media (max-width:900px) {
+    .vision img{
+        width: 100%;
+    }
+    .vision p{
+        width: 100%;
+        margin-top: 3%;
+    }
+}
+
