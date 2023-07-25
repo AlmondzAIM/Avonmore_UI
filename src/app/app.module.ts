@@ -18,16 +18,22 @@ import { ShareHoldersComponent } from './components/share-holders/share-holders.
 import { StartegiesDetailsComponent } from './components/startegies-details/startegies-details.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { CookiePolicyComponent } from './components/cookie-policy/cookie-policy.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { FormEditComponent } from './components/form-edit/form-edit.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +53,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     CookiePolicyComponent,
     PrivacyPolicyComponent,
     DisclaimerComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FormEditComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,10 +66,14 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     MatTableModule,
     MatProgressSpinnerModule,
     ReactiveFormsModule,
-    MatInputModule
-  
+    MatInputModule,
+    HttpClientModule,
+    NgxExtendedPdfViewerModule,
+    MatListModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

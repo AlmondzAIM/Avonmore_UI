@@ -1,45 +1,102 @@
-main{
-    width: 100%;
-    padding:50px 5%;
+main {
+  width: 100%;
+  padding: 50px 5%;
 }
-h1{
-  font-weight: 500;  
+h1 {
+  font-weight: 500;
   position: relative;
   font-size: 1.4rem;
-  margin-bottom:5%;
+  margin-bottom: 5%;
   text-align: center;
   margin: 5% 0;
 }
-h1::after{
-    position: absolute;
-    content: '';
-    height: 2px;
-    bottom: -2px;
-    left:45%;
-    width:10%;
-    background-color: #0e274f;
+h1::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -2px;
+  left: 45%;
+  width: 10%;
+  background-color: #0e274f;
 }
 .mat-form-field + .mat-form-field {
-    margin-left: 8px;
-  }
+  margin-left: 8px;
+}
 
-  .para_content p{
-    font-size: 14px;
-    line-height: 1.6;
-    padding: 0 10px 0 0;
-    margin-bottom: 15px;
-    color: #000 !important;
-    text-align: justify;
-  }
+.para_content p {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0 10px 0 0;
+  margin-bottom: 15px;
+  color: #000 !important;
+  text-align: justify;
+}
 
-  .subTitle{
-    font-size: 20px;
-    line-height: 24px;
-    display: inline-block;
-    font-weight: bold;
-    margin-top: 25px;
-  }
+.subTitle {
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 25px;
+}
 
-.custom-header{
+.custom-header {
   pointer-events: none;
+}
+
+.edit-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-button {
+  margin-left: 180px; /* Adjust the margin as needed */
+  background-color: orange;
+}
+
+button {
+  border-radius: 10%;
+}
+.pdf-link-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.edit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.delete-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+}
+
+.button-group button {
+  margin-right: 10px;
 }

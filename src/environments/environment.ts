@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiLink: `http://localhost:3000/api/v1/`,
+  apiUrl: 'http://localhost:3000/api/v1/document-archive/share-holder',
 };
 
 /*

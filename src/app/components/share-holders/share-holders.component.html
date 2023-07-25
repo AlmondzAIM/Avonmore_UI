@@ -1,803 +1,268 @@
 <main>
-  <!-- <h1>OTHER SHAREHOLDERS INFORMATION</h1> -->
   <p class="subTitle">Disclosure Under Regulation 46 of SEBI- LODR</p>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Details of Business</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-panel-description>
+      <div
+        [innerHTML]="details"
+        style="color: #000000"
+        class="para_content"
+      ></div>
+    </mat-panel-description>
+  </mat-expansion-panel>
+
   <mat-accordion>
-    <!-- new panel -->
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Details of Business
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <div class="para_content">
-        <p>Incorporated on 30th September, 1991 as a Private Limited Company under the Name & Style of “Ashtan Capital &
-          Management Services Pvt. Ltd.”<br>
-
-          Within a year of its inception, converted into a Public Limited Company on 15th May, 1992.<br>
-
-          Name changed on 5th November, 1992, to “Allianz Capital & Management Services Ltd.” and again changed on 22
-          May 2007 to “Almondz Capital & Management Services Ltd.”<br>
-
-          The Company was a Category – I Merchant Banker registered with the SEBI, later on the Certificate was
-          transferred to one of its group companies namely M/s Almondz Global Securities Ltd. (formerly: Allianz
-          Securities Ltd.).<br>
-
-          The Company was mainly into Merchant Banking, Corporate Finance with respect to both the fund based and fees
-          based activities, money market operations, leasing activities, bills discounting, short term funding and inter
-          – corporate deposits. Activities of Project Finance Division include project counseling, technology tie – ups,
-          feasibility studies, market research, project appraisal, loan syndication and working capital
-          arrangements.<br>
-
-          During 2007-08, the Company applied for the registration with the Reserve Bank of India as a Non – Banking
-          Financial Company and on 10 October 2008 it is granted the Certificate of Registration as a Non-Banking
-          Finance Company. The Company is now RBI registered NBFC and is engaged in Nonbanking Financial Activities
-          without taking deposits.<br>
-
-          The Company got its name changed to Avonmore Capital & Management Services Ltd., w.e.f., 30.08.2013.<br>
-
-          Presently, the Company is involved in making long term strategic investments, specifically in group companies
-          and Non Banking Finance Activities (Non- Deposit). The Company is acting as primary holding and investment
-          company, focusing on new business opportunities. The Company holds strategic stakes of around 57% in Almondz
-          Global Securities Limited besides stake in other subsidiaries and step down subsidiaries. The Company is
-          essentially an investment company. Its focus is on earning income through dividends interest and profits on
-          investments held.<br>
-
-
-          The Company has not changed its activities in last 3 years.</p>
-
-      </div>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Terms of Appointment of Independent Directors
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/shareholders/Terms_of_Appointment_of_Independent_Directors.pdf" target="/"><i
-          class="fas fa-file-pdf"></i> Terms of Appointment of Independent Directors</a>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Composition of various Committees of Board of Directors
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/shareholders/Board_of_Directors_Acms.pdf" target="/"><i
-          class="fas fa-file-pdf"></i>Composition of various Committees of Board of Directors</a>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Code of Conduct of Board of Directors and senior management personnel
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/bod/code_of_conduct_for_board_and_senior.pdf" target="/"><i class="fas fa-file-pdf"></i> Code
-        of Conduct of Board of Directors and senior management personnel</a>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Whistle Blower Policy
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/shareholders/whistle_policy.pdf" target="/"><i class="fas fa-file-pdf"></i> Whistle Blower
-        Policy</a><br>
-
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Criteria of Making Payments to Non-Executive Directors
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/shareholders/nomination_policy.pdf" target="/"><i class="fas fa-file-pdf"></i> Nomination And
-        Remuneration Policy</a><br>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Policy on Dealing with Related Party Transactions
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-
-      <a href="assets/pdf/shareholders/transactions_policy.pdf" target="/"><i class="fas fa-file-pdf"></i> Related Party
-        Trasactions Policy</a><br>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Policy for determining ‘Material’ Subsidiaries
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-
-      <a href="assets/pdf/shareholders/material_policy.pdf" target="/"><i class="fas fa-file-pdf"></i> Policy on
-        Material Subsidiary Company</a><br>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Details of familiarization programmes imparted to Independent Directors
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/shareholders/Familiarisation Programmes of Independent 2021-22 and Cumulative till date.pdf"
-        target="/"><i class="fas fa-file-pdf"></i> Familarisation programe of Independent Directors 2021-2022 and
-        Cumulative till Date</a><br>
-      <a href="assets/pdf/shareholders/Familarisation Programme_ACMS 2020-21.pdf" target="/"><i
-          class="fas fa-file-pdf"></i> Familarisation programe of Independent Directors 2015-16 to 2020-21</a><br>
-      <a href="assets/pdf/shareholders/Familirization_Prog_ACMS.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Familarisation programe of Independent Directors 2014-15 to 2019-20</a>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Email address for Grievance Redressal and other relevant details
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/shareholders/Details_points.pdf" target="/"><i class="fas fa-file-pdf"></i> Email address for
-        Grievance Redressal and other relevant details</a>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Contact information of the designated officials of the listed entity who are responsible for assisting and
-          handling investor grievances
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/shareholders/Details_points.pdf" target="/"><i class="fas fa-file-pdf"></i>Contact information
-        of the designated officials of the listed entity who are responsible for assisting and
-        handling investor grievances</a>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel class="custom-header" hideToggle="true">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Financial Information
-          including&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          N.A
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Intimation of Board Meeting
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <h6>Other Corporate Actions / Listing Compliances</h6>
-      <!-- <a href="assets/pdf/shareholders/outcome.pdf" target="/"><i class="fas fa-file-pdf"></i>2022-23 (Q3)- Outcome of
-        Board Meeting</a> <br>
-      <a href="assets/pdf/shareholders/BM_intimation_dec2022.pdf" target="/"><i class="fas fa-file-pdf"></i>2022-23
-        (Q3)- Intimation Of Board Meeting</a> <br> -->
-        <a href="assets/pdf/shareholders/ACMS_WEBSITE_06_07_2017.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Intimation To Exchange 06-Jul-2017</a> <br>
-      <a href="assets/pdf/shareholders/ACMS_WEBSITE_27_06_2017.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Intimation To Exchange 27-Jun-2017</a> <br>
-      <a href="assets/pdf/shareholders/outcome_amcs.pdf" target="/"><i class="fas fa-file-pdf"></i> Outcome of Board
-        Meeting Q2 16-17</a> <br>
-      <a href="assets/pdf/shareholders/ACMS_cfo_Reg_2016.pdf" target="/"><i class="fas fa-file-pdf"></i> Resignation of
-        CFO</a> <br>
-      <a href="assets/pdf/shareholders/outcome_of_board_meeting_Q4_1516.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Outcome of Board Meeting Q4 15-16</a>
-      <h6>Board Meetings</h6>
-
-      <div *ngFor="let item of files2">
-        <p>{{item.title}}</p>
-        <a [href]="file.path" target="/" *ngFor="let file of item.files"> <i class="fas fa-file-pdf"></i>{{file.name}}
-          <br></a>
-      </div>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Financials
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <div style="margin-top:20px ;" *ngFor="let item of files6">
-        <a target="/" *ngFor="let file of item" [href]="file.path"><i class="fas fa-file-pdf"></i>{{file.name}} <br></a>
-      </div>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Shareholding Pattern
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <div *ngFor="let item of files">
-        <p>{{item.title}}</p>
-        <a [href]="file.path" target="/" *ngFor="let file of item.files"> <i class="fas fa-file-pdf"></i>{{file.name}}
-          <br></a>
-      </div>
-
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel class="custom-header" hideToggle="true">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Details of agreements entered into with the media companies and/or their associates,
-          etc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          N.A
-        </mat-panel-title>
-
-      </mat-expansion-panel-header>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel class="custom-header" hideToggle="true">
-      <mat-expansion-panel-header>
-        Schedule of analysts or institutional investors meet and presentations made by the listed entity to analysts or
-        institutional investors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        NIL
-      </mat-expansion-panel-header>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel class="custom-header" hideToggle="true">
-      <mat-expansion-panel-header>
-        Audio or video recordings and transcripts of post earnings/quarterly
-        calls&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        NIL
-      </mat-expansion-panel-header>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel class="custom-header" hideToggle="true">
-      <mat-expansion-panel-header>
-        New name and the old name of the listed entity for a continuous period of one year, from the date of the last
-        name
-        change&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        N.A
-      </mat-expansion-panel-header>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Advertisement in Newspaper as per Regulation 47 (1)
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <div style="margin-top:20px ;" *ngFor="let item of files6">
-        <a target="/" *ngFor="let file of item" [href]="file.path"><i class="fas fa-file-pdf"></i>{{file.name}} <br></a>
-      </div>
-    </mat-expansion-panel>
-
-
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Audited financial statements of Subsidiaries Companies
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <div style="margin-top:20px ;" *ngFor="let item of files7">
-        <a target="/" *ngFor="let file of item" [href]="file.path"><i class="fas fa-file-pdf"></i>{{file.name}} <br></a>
-      </div>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Secretarial Compliance Report as per Regulation 24A(2)
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/shareholders/Secretarial-Compliance-Report.pdf" target="/"><i class="fas fa-file-pdf"></i>Secretarial Compliance Report as per Regulation 24A(2)</a>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Policy for determination of Materiality of events or information
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/bod/material_events_Policy.pdf" target="/"><i class="fas fa-file-pdf"></i> Policy for
-        determination of Materiality of events or information</a><br>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Disclosure of contact details of Key Managerial Personnel who are authorized for the purpose of determining
-          materiality of an event or information and for the purpose of making disclosures to stock exchange(s)
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/shareholders/Details_points.pdf" target="/"><i class="fas fa-file-pdf"></i>Disclosure of
-        contact details of Key Managerial Personnel who are authorized for the purpose of determining
-        materiality of an event or information and for the purpose of making disclosures to stock exchange(s)</a>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Disclosures under Regulation 30(8)
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <h6>Other Corporate Actions / Listing Compliances</h6>
-      <!-- <a href="assets/pdf/shareholders/outcome.pdf" target="/"><i class="fas fa-file-pdf"></i>2022-23 (Q3)- Outcome of
-        Board Meeting</a> <br>
-      <a href="assets/pdf/shareholders/BM_intimation_dec2022.pdf" target="/"><i class="fas fa-file-pdf"></i>2022-23
-        (Q3)- Intimation Of Board Meeting</a> <br> -->
-      <a href="assets/pdf/shareholders/ACMS_WEBSITE_06_07_2017.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Intimation To Exchange 06-Jul-2017</a> <br>
-      <a href="assets/pdf/shareholders/ACMS_WEBSITE_27_06_2017.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Intimation To Exchange 27-Jun-2017</a> <br>
-      <a href="assets/pdf/shareholders/outcome_amcs.pdf" target="/"><i class="fas fa-file-pdf"></i> Outcome of Board
-        Meeting Q2 16-17</a> <br>
-      <a href="assets/pdf/shareholders/ACMS_cfo_Reg_2016.pdf" target="/"><i class="fas fa-file-pdf"></i> Resignation of
-        CFO</a> <br>
-      <a href="assets/pdf/shareholders/outcome_of_board_meeting_Q4_1516.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Outcome of Board Meeting Q4 15-16</a>
-      <h6>Board Meetings</h6>
-
-      <div *ngFor="let item of files2">
-        <p>{{item.title}}</p>
-        <a [href]="file.path" target="/" *ngFor="let file of item.files"> <i class="fas fa-file-pdf"></i>{{file.name}}
-          <br></a>
-      </div>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel class="custom-header" hideToggle="true">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Statements of deviation(s) or variation(s) as specified in regulation 32 of these Regulations
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          NIL
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <h6>Other Corporate Actions / Listing Compliances</h6>
-      <a href="assets/pdf/shareholders/outcome.pdf" target="/"><i class="fas fa-file-pdf"></i>2022-23 (Q3)- Outcome of
-        Board Meeting</a> <br>
-      <a href="assets/pdf/shareholders/BM_intimation_dec2022.pdf" target="/"><i class="fas fa-file-pdf"></i>2022-23
-        (Q3)- Intimation Of Board Meeting</a> <br>
-      <a href="assets/pdf/shareholders/ACMS_WEBSITE_06_07_2017.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Intimation To Exchange 06-Jul-2017</a> <br>
-      <a href="assets/pdf/shareholders/ACMS_WEBSITE_27_06_2017.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Intimation To Exchange 27-Jun-2017</a> <br>
-      <a href="assets/pdf/shareholders/outcome_amcs.pdf" target="/"><i class="fas fa-file-pdf"></i> Outcome of Board
-        Meeting Q2 16-17</a> <br>
-      <a href="assets/pdf/shareholders/ACMS_cfo_Reg_2016.pdf" target="/"><i class="fas fa-file-pdf"></i> Resignation of
-        CFO</a> <br>
-      <a href="assets/pdf/shareholders/outcome_of_board_meeting_Q4_1516.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Outcome of Board Meeting Q4 15-16</a>
-      <h6>Board Meetings</h6>
-
-      <div *ngFor="let item of files2">
-        <p>{{item.title}}</p>
-        <a [href]="file.path" target="/" *ngFor="let file of item.files"> <i class="fas fa-file-pdf"></i>{{file.name}}
-          <br></a>
-      </div>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Annual Return under Section 92 of the Companies Act, 2013 and the rules made thereunder
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <a href="assets/pdf/shareholders/Annual_return.pdf" target="/"><i class="fas fa-file-pdf"></i>Annual Return under
-        Section 92 of the Companies Act, 2013 and the rules made thereunder</a>
-    </mat-expansion-panel>
-
-
-    <!-- new panel -->
-    <p class="subTitle">Other Shareholders information</p>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Compliance Certificate-Regulation 7 (3) of SEBI (LODR)
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/acms_certificate_7_3.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance 
-        Certificate-Regulation 7 (3) of SEBI (LODR)-  Compliance Certificate-Regulation 7 (3) of SEBI (LODR) March 2023</a><br>
-      <a href="assets/pdf/shareholders/acms_7_3_april22.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance
-        Certificate-Regulation 7 (3) of SEBI (LODR) March 2022</a><br>
-      <a href="assets/pdf/shareholders/acms_7_3_sep21.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance
-        Certificate-Regulation 7 (3) of SEBI (LODR) September 2021</a><br>
-      <a href="assets/pdf/shareholders/ACMS_7_3_march2021.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance
-        Certificate-Regulation 7 (3) of SEBI (LODR) March 2021</a><br>
-      <a href="assets/pdf/shareholders/avonmore_7_3_sep2020.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance
-        Certificate-Regulation 7 (3) of SEBI (LODR) September 2020</a><br>
-      <a href="assets/pdf/shareholders/7(3) 31.03.2020 ACMS.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance
-        Certificate-Regulation 7 (3) of SEBI (LODR) March 2020</a><br>
-      <a href="assets/pdf/shareholders/BSE_7_3_ACMS.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance
-        Certificate-Regulation 7 (3) of SEBI (LODR) September 2019</a><br>
-      <a href="assets/pdf/shareholders/ACMS_BSE_7(3)_mar.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance
-        Certificate-Regulation 7 (3) of SEBI (LODR) March 2019</a><br>
-      <a href="assets/pdf/shareholders/ACMS_7_3.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance
-        Certificate-Regulation 7 (3) of SEBI (LODR) September 2018</a><br>
-      <a href="assets/pdf/shareholders/ACMS_Compliance_Certificate_Regulation_7.pdf" target="/"> <i
-          class="fas fa-file-pdf"></i> Compliance Certificate-Regulation 7 (3) of SEBI (LODR)</a><br>
-      <a href="assets/pdf/shareholders/compliance_acms_wesite.pdf" target="/"> <i class="fas fa-file-pdf"></i>
-        Compliance Certificate-Regulation 7 (3) of SEBI (LODR) Q2 (2016-17)</a><br>
-      <a href="assets/pdf/shareholders/avonmore7(3)1718.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance
-        Certificate-Regulation 7 (3) of SEBI (LODR) Q2 (2017-18)</a><br>
-      <a href="assets/pdf/shareholders/acms_7_3_sep21.pdf" target="/"> <i class="fas fa-file-pdf"></i> Compliance
-        Certificate-Regulation 7 (3) of SEBI (LODR) Q4 (2017-18)</a><br>
-      <a href="assets/pdf/shareholders/compliance certificatr_ACMS_MAR17.pdf" target="/"> <i
-          class="fas fa-file-pdf"></i> Compliance Certificate-Regulation 7 (3) of SEBI (LODR) Q4 (2016-17)</a>
-
-
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Code Of Conduct (Prevention of Insider Trading)
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/insidertraing_ACMs.pdf" target="/"><i class="fas fa-file-pdf"></i> Code Of
-        Conduct (Prevention of Insider Trading)</a>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Company Policy
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/whistle_policy.pdf" target="/"><i class="fas fa-file-pdf"></i> Whistle Blower
-        Policy</a><br>
-      <a href="assets/pdf/shareholders/transactions_policy.pdf" target="/"><i class="fas fa-file-pdf"></i> Related Party
-        Trasactions Policy</a><br>
-      <a href="assets/pdf/shareholders/nomination_policy.pdf" target="/"><i class="fas fa-file-pdf"></i> Nomination And
-        Remuneration Policy</a><br>
-      <a href="assets/pdf/shareholders/material_policy.pdf" target="/"><i class="fas fa-file-pdf"></i> Policy on
-        Material Subsidiary Company</a><br>
-      <a href="assets/pdf/shareholders/CSR_2017.pdf" target="/"><i class="fas fa-file-pdf"></i> CSR Policy 2017</a><br>
-      <a href="assets/pdf/shareholders/CSR Amended Policy-ACMS-01.04.2021.pdf" target="/"><i
-          class="fas fa-file-pdf"></i> CSR Amended Policy 2021</a>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Annual General Meeting Results
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/bse_votingresults.pdf" target="/"><i class="fas fa-file-pdf"></i> 30th Annual
-        General Meeting Results - 2022</a><br>
-      <a href="assets/pdf/shareholders/Avonmore_votingresults_2021.pdf" target="/"><i class="fas fa-file-pdf"></i> 29th
-        Annual General Meeting Results - 2021</a><br>
-      <a href="assets/pdf/shareholders/results_scrutinizerreport_acms.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        28th Annual General Meeting Results - 2020</a><br>
-      <a href="assets/pdf/shareholders/scrutunizer_report_acms.pdf" target="/"><i class="fas fa-file-pdf"></i> 27th
-        Annual General Meeting Results - 2019</a><br>
-      <a href="assets/pdf/shareholders/ACMS_RESULTS_AGM_BSE.pdf" target="/"><i class="fas fa-file-pdf"></i> 26th Annual
-        General Meeting Results - 2018</a><br>
-      <a href="assets/pdf/shareholders/Resulrs_acms_17.pdf" target="/"><i class="fas fa-file-pdf"></i> 25th Annual
-        General Meeting Results - 2017</a><br>
-      <a href="assets/pdf/shareholders/Website_ACMS_REsults.pdf" target="/"><i class="fas fa-file-pdf"></i> 24th Annual
-        General Meeting Results - 2016</a><br>
-      <a href="assets/pdf/shareholders/AGM_Results_2015.pdf" target="/"><i class="fas fa-file-pdf"></i> 23rd Annual
-        General Meeting Results - 2015</a>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Notice to Stock Exchange/s for :
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <h6>Other Corporate Actions / Listing Compliances</h6>
-      <a href="assets/pdf/shareholders/acms_74_5.pdf" target="/"><i class="fas fa-file-pdf"></i>2022-23 (Q4)- 
-        Certificate Under Regulation 74(5) of SEBI (Depository and Participants) Regulations, 2018</a> <br>
-      <a href="assets/pdf/shareholders/outcome.pdf" target="/"><i class="fas fa-file-pdf"></i>2022-23 (Q3)- Outcome of
-        Board Meeting</a> <br>
-      <a href="assets/pdf/shareholders/BM_intimation_dec2022.pdf" target="/"><i class="fas fa-file-pdf"></i>2022-23
-        (Q3)- Intimation Of Board Meeting</a> <br>
-      <a href="assets/pdf/shareholders/ACMS_WEBSITE_06_07_2017.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Intimation To Exchange 06-Jul-2017</a> <br>
-      <a href="assets/pdf/shareholders/ACMS_WEBSITE_27_06_2017.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Intimation To Exchange 27-Jun-2017</a> <br>
-      <a href="assets/pdf/shareholders/outcome_amcs.pdf" target="/"><i class="fas fa-file-pdf"></i> Outcome of Board
-        Meeting Q2 16-17</a> <br>
-      <a href="assets/pdf/shareholders/ACMS_cfo_Reg_2016.pdf" target="/"><i class="fas fa-file-pdf"></i> Resignation of
-        CFO</a> <br>
-      <a href="assets/pdf/shareholders/outcome_of_board_meeting_Q4_1516.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Outcome of Board Meeting Q4 15-16</a>
-      <h6>Board Meetings</h6>
-
-      <div *ngFor="let item of files2">
-        <p>{{item.title}}</p>
-        <a [href]="file.path" target="/" *ngFor="let file of item.files"> <i class="fas fa-file-pdf"></i>{{file.name}}
-          <br></a>
-      </div>
-
-
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Shareholders Meetings:
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <div *ngFor="let item of files3">
-        <p>{{item.title}}</p>
-        <a [href]="file.path" target="/" *ngFor="let file of item.files"> <i class="fas fa-file-pdf"></i>{{file.name}}
-          <br></a>
-      </div>
-
-    </mat-expansion-panel>
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Familarisation programe of Independent Directors
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/Familiarisation Programmes of Independent 2021-22 and Cumulative till date.pdf"
-        target="/"><i class="fas fa-file-pdf"></i> Familarisation programe of Independent Directors 2021-2022 and
-        Cumulative till Date</a><br>
-      <a href="assets/pdf/shareholders/Familarisation Programme_ACMS 2020-21.pdf" target="/"><i
-          class="fas fa-file-pdf"></i> Familarisation programe of Independent Directors 2015-16 to 2020-21</a><br>
-      <a href="assets/pdf/shareholders/Familirization_Prog_ACMS.pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Familarisation programe of Independent Directors 2014-15 to 2019-20</a>
-    </mat-expansion-panel>
-
-    <!-- <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Terms of Appointment of Independent Directors
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/Terms_of_Appointment_of_Independent_Directors.pdf" target="/"><i
-          class="fas fa-file-pdf"></i> Terms of Appointment of Independent Directors</a>
-    </mat-expansion-panel> -->
-
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Reconciliation of Share Capital Audit Report
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <div *ngFor="let item of files4">
-        <p>{{item.title}}</p>
-        <a [href]="file.path" target="/" *ngFor="let file of item.files"> <i class="fas fa-file-pdf"></i>{{file.name}}
-          <br></a>
-      </div>
-
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Fair Practice Code
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/Fair_Practice_Code.pdf" target="/"><i class="fas fa-file-pdf"></i> Fair Practice
-        Code</a>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Investor Complaint
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-
-      <div *ngFor="let item of files5">
-        <p>{{item.title}}</p>
-        <a [href]="file.path" target="/" *ngFor="let file of item.files"> <i class="fas fa-file-pdf"></i>{{file.name}}
-          <br></a>
-      </div>
-
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Postal Ballot December 2022
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/Postal_Ballot_Notice2022.pdf" target="/"><i class="fas fa-file-pdf"></i>Postal
-        Ballot Notice</a><br>
-      <a href="assets/pdf/shareholders/results_scrutinizerreport_Acms_BSE.pdf" target="/"><i
-          class="fas fa-file-pdf"></i>Outcome of Postal Ballot</a><br>
-      <a href="assets/pdf/shareholders/publication_postalballot_Acms.pdf" target="/"><i
-          class="fas fa-file-pdf"></i>Copies of the Notice of the Postal Ballot as advertised</a><br>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Postal Ballot July 2017
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/PostalBallotResults_1718.pdf" target="/"><i class="fas fa-file-pdf"></i> Postal
-        Ballot Results</a><br>
-      <a href="assets/pdf/shareholders/Postal_Ballot_form.pdf" target="/"><i class="fas fa-file-pdf"></i> Postal Ballot
-        Form</a><br>
-      <a href="assets/pdf/shareholders/Postal_Ballot_Notice.pdf" target="/"><i class="fas fa-file-pdf"></i> Postal
-        Ballot Notice</a><br>
-      <a href="assets/pdf/shareholders/ACMS_WEBSITE_13_06_2017.pdf" target="/"><i class="fas fa-file-pdf"></i> Postal
-        Ballot Notice_NewsPaper_Advertisement</a><br>
-      <a href="assets/pdf/shareholders/Altered_Articles_of_Association_jul17.pdf" target="/"><i
-          class="fas fa-file-pdf"></i> Draft Articles Of Associations</a><br>
-      <a href="assets/pdf/shareholders/Altered_Articles_of_Association_jul17 (1).pdf" target="/"><i
-          class="fas fa-file-pdf"></i> Approved Articles Of Associations</a>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Designated Depository for monitoring foreign investment limits
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="/" target="/"><i class="fas fa-file-pdf"></i> Central Depository Services (India) Limited</a>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Related Party Transactions
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/Rpt_ACMS_Mar 2022.pdf" target="/"><i class="fas fa-file-pdf"></i> Half year ended 
-        31st March, 2022</a><br>
-      <a href="assets/pdf/shareholders/RPT-acms_Sep 2022.pdf" target="/"><i class="fas fa-file-pdf"></i> Half year ended
-        30th September, 2022</a><br>
-      <a href="assets/pdf/shareholders/RPT_MArch2021.pdf" target="/"><i class="fas fa-file-pdf"></i> Half year Ended
-        31st March 2021</a><br>
-      <a href="assets/pdf/shareholders/RPT_ACMS.pdf" target="/"><i class="fas fa-file-pdf"></i> Half year Ended 30th
-        September 2020</a><br>
-      <a href="assets/pdf/shareholders/RPT_Avonmore.pdf" target="/"><i class="fas fa-file-pdf"></i> Half year Ended 31st
-        March 2020</a><br>
-      <a href="assets/pdf/shareholders/acms_RPT_sep19.pdf" target="/"><i class="fas fa-file-pdf"></i> Half year Ended
-        30th September 2019</a>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Shareholder’s Forms
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/Form ISR-1_p.pdf" target="/"><i class="fas fa-file-pdf"></i> Form ISR-1</a><br>
-      <a href="assets/pdf/shareholders/Form ISR-2_p.pdf" target="/"><i class="fas fa-file-pdf"></i> Form ISR-2</a><br>
-      <a href="assets/pdf/shareholders/Form ISR-3_p.pdf" target="/"><i class="fas fa-file-pdf"></i> Form ISR-3</a><br>
-      <a href="assets/pdf/shareholders/Form ISR-4-circular_p.pdf" target="/"><i class="fas fa-file-pdf"></i> Form
-        ISR-4-circular</a><br>
-      <a href="assets/pdf/shareholders/Form No. SH-13_p.pdf" target="/"><i class="fas fa-file-pdf"></i> Form
-        SH-13</a><br>
-      <a href="assets/pdf/shareholders/Form No. SH-14_p.pdf" target="/"><i class="fas fa-file-pdf"></i> Form SH-14</a>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          ACMS BUYBACK 2022
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <a href="assets/pdf/shareholders/Intimation_BSE.pdf" target="/"><i class="fas fa-file-pdf"></i>Completion of
-        Extinguishment of Equity Shares</a><br>
-      <a href="assets/pdf/shareholders/Board_Resolution_jun.pdf" target="/"><i class="fas fa-file-pdf"></i> ACMS Board
-        approves Buyback of Equity Shares at its meeting held on 30th May 2022</a><br>
-      <a href="assets/pdf/shareholders/PA_june.pdf" target="/"><i class="fas fa-file-pdf"></i> Public Announcement for
-        Buyback of Shares through Tender Offer</a><br>
-      <a href="assets/pdf/shareholders/Letterofoffer.pdf" target="/"><i class="fas fa-file-pdf"></i> Click here to
-        download the Letter of Offer</a><br>
-      <a href="assets/pdf/shareholders/TenderForm(Demat_Shares).pdf" target="/"><i class="fas fa-file-pdf"></i> Click
-        here to download the Tender Form (Demat Shares)</a><br>
-      <a href="assets/pdf/shareholders/TenderForm(Physical_Shares).pdf" target="/"><i class="fas fa-file-pdf"></i> Click
-        here to download the Tender Form (Physical Shares)</a><br>
-      <a href="assets/pdf/shareholders/ShareTransferDeed (Form SH-4).pdf" target="/"><i class="fas fa-file-pdf"></i>
-        Click here to download the Share Transfer Deed (Form SH-4)</a><br>
-      <a href="assets/pdf/shareholders/Corrigendum_to_the_letter_of_offer.pdf" target="/"><i
-          class="fas fa-file-pdf"></i> Corrigendum to the Letter of Offer</a>
-    </mat-expansion-panel>
+    <ng-container *ngFor="let item of shareholderData2">
+      <mat-expansion-panel
+        *ngIf="item.subHeadings && item.subHeadings.length > 0"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ item.headingName }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <ng-container *ngFor="let subHeading of item.subHeadings">
+            <ng-container *ngIf="item.subHeadings.length > 1">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    {{
+                      subHeading.subHeading
+                        ? subHeading.subHeading
+                        : subHeading.links[0].name
+                    }}
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <table>
+                  <tbody>
+                    <tr *ngFor="let link of subHeading.links">
+                      <td>
+                        <a [href]="link.link" target="_blank">
+                          <i class="fas fa-file-pdf"></i>{{ link.name }}
+                        </a>
+                      </td>
+                      <td>
+                        <div class="button-group">
+                          <button
+                            class="edit-button"
+                            mat-mini-fab
+                            (click)="editFile(link.id)"
+                          >
+                            <mat-icon>edit</mat-icon>
+                          </button>
+                          <button
+                            class="delete-button"
+                            mat-mini-fab
+                            color="warn"
+                            (click)="deleteFile(link.id)"
+                          >
+                            <mat-icon>delete</mat-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </mat-expansion-panel>
+            </ng-container>
+            <ng-container
+              *ngIf="
+                (subHeading.subHeading === '' ||
+                  subHeading.subHeading !== '') &&
+                item.subHeadings.length === 1
+              "
+            >
+              <table>
+                <tbody>
+                  <tr *ngFor="let link of subHeading.links">
+                    <td>
+                      <a [href]="link.link" target="_blank">
+                        <i class="fas fa-file-pdf"></i>{{ link.name }}
+                      </a>
+                    </td>
+                    <td>
+                      <div class="button-group">
+                        <button
+                          class="edit-button"
+                          mat-mini-fab
+                          (click)="editFile(link.id)"
+                        >
+                          <mat-icon>edit</mat-icon>
+                        </button>
+                        <button
+                          class="delete-button"
+                          mat-mini-fab
+                          color="warn"
+                          (click)="deleteFile(link.id)"
+                        >
+                          <mat-icon>delete</mat-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </ng-container>
+          </ng-container>
+        </mat-accordion>
+      </mat-expansion-panel>
+      <mat-expansion-panel
+        *ngIf="!item.subHeadings || item.subHeadings.length === 0"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ item.headingName }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-container *ngFor="let link of item.links">
+          <a [href]="link.link" target="_blank">
+            <i class="fas fa-file-pdf"></i>{{ link.name }}<br />
+          </a>
+        </ng-container>
+      </mat-expansion-panel>
+    </ng-container>
+  </mat-accordion>
+
+  <p class="subTitle">Other Shareholders information</p>
+  <mat-accordion>
+    <ng-container *ngFor="let item of shareholderData1">
+      <mat-expansion-panel
+        *ngIf="item.subHeadings && item.subHeadings.length > 0"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ item.headingName }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <ng-container *ngFor="let subHeading of item.subHeadings">
+            <ng-container *ngIf="item.subHeadings.length > 1">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    {{
+                      subHeading.subHeading
+                        ? subHeading.subHeading
+                        : subHeading.links[0].name
+                    }}
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <table>
+                  <tbody>
+                    <tr *ngFor="let link of subHeading.links">
+                      <td>
+                        <a [href]="link.link" target="_blank">
+                          <i class="fas fa-file-pdf"></i>{{ link.name }}
+                        </a>
+                      </td>
+                      <td>
+                        <div class="button-group">
+                          <button
+                            class="edit-button"
+                            mat-mini-fab
+                            (click)="editFile(link.id)"
+                          >
+                            <mat-icon>edit</mat-icon>
+                          </button>
+                          <button
+                            class="delete-button"
+                            mat-mini-fab
+                            color="warn"
+                            (click)="deleteFile(link.id)"
+                          >
+                            <mat-icon>delete</mat-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </mat-expansion-panel>
+            </ng-container>
+            <ng-container
+              *ngIf="
+                (subHeading.subHeading === '' ||
+                  subHeading.subHeading !== '') &&
+                item.subHeadings.length === 1
+              "
+            >
+              <table>
+                <tbody>
+                  <tr *ngFor="let link of subHeading.links">
+                    <td>
+                      <a [href]="link.link" target="_blank">
+                        <i class="fas fa-file-pdf"></i>{{ link.name }}
+                      </a>
+                    </td>
+                    <td>
+                      <div class="button-group">
+                        <button
+                          class="edit-button"
+                          mat-mini-fab
+                          (click)="editFile(link.id)"
+                        >
+                          <mat-icon>edit</mat-icon>
+                        </button>
+                        <button
+                          class="delete-button"
+                          mat-mini-fab
+                          color="warn"
+                          (click)="deleteFile(link.id)"
+                        >
+                          <mat-icon>delete</mat-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </ng-container>
+          </ng-container>
+        </mat-accordion>
+      </mat-expansion-panel>
+      <mat-expansion-panel
+        *ngIf="!item.subHeadings || item.subHeadings.length === 0"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ item.headingName }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <table>
+          <tbody>
+            <tr *ngFor="let link of item.links">
+              <td>
+                <a [href]="link.link" target="_blank">
+                  <i class="fas fa-file-pdf"></i>{{ link.name }}
+                </a>
+              </td>
+              <td>
+                <div class="button-group">
+                  <button
+                    class="edit-button"
+                    mat-mini-fab
+                    (click)="editFile(link.id)"
+                  >
+                    <mat-icon>edit</mat-icon>
+                  </button>
+                  <button
+                    class="delete-button"
+                    mat-mini-fab
+                    color="warn"
+                    (click)="deleteFile(link.id)"
+                  >
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </mat-expansion-panel>
+    </ng-container>
   </mat-accordion>
 </main>
